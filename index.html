@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Sneha B B - Software Engineer specializing in Java, Python, and intelligent systems development.">
+    <meta name="keywords" content="Software Engineer, Portfolio, Java, Python, Web Development, Arduino, Projects">
+    <meta name="author" content="Sneha B B">
+    <title>Sneha B B | Software Engineer Portfolio</title>
+
+    <!-- Google Fonts: Modern Creative Tech Fonts (Space Grotesk + Plus Jakarta Sans + JetBrains Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       HEADER & NAVIGATION SECTION
+       Contains the branding/logo, navigation links, and the night mode toggle.
+       ========================================================================== -->
+    <header id="site-header" class="site-header">
+        <div class="nav-container">
+            <!-- Brand / Logo -->
+            <a href="#hero" class="nav-logo" aria-label="Sneha B B - Home">
+                <span class="logo-code">&lt;</span>Sneha<span class="logo-accent">.dev</span><span class="logo-code">/&gt;</span>
+            </a>
+
+            <!-- Primary Navigation Links -->
+            <nav id="primary-nav" class="primary-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#timeline" class="nav-link">Timeline</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#chat" class="nav-link">AI Chat</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Navigation Actions: Night Mode Toggle & CTA -->
+            <div class="nav-actions">
+                <!-- ==========================================================
+                   PLACEHOLDER: NIGHT MODE / DARK MODE TOGGLE
+                   Allows users to toggle between dark theme and light theme.
+                   Controlled via Javascript (#theme-toggle).
+                   ========================================================== -->
+                <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle dark and light theme" title="Toggle Night Mode">
+                    <!-- Moon icon (active in light mode to switch to dark) -->
+                    <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                    <!-- Sun icon (active in dark mode to switch to light) -->
+                    <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Hamburger Button -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       Wraps all primary sections of the portfolio.
+       ========================================================================== -->
+    <main id="main-content" class="main-content">
+
+        <!-- ======================================================================
+           PLACEHOLDER: 1. HERO SECTION (CREATIVE TECH THEME)
+           Welcome Title, Tagline, Interactive Code Terminal Card, High-Tech Avatar,
+           Background Image (backgroud.jpg), and CSS Media Query Theme Toggle.
+           ====================================================================== -->
+        <section id="hero" class="hero-section tech-hero" aria-labelledby="hero-title">
+            <!-- Ambient Luminous Mesh & Engineering Grid -->
+            <div class="tech-ambient-mesh" aria-hidden="true"></div>
+            <div class="tech-grid-lines" aria-hidden="true"></div>
+
+            <div class="container hero-container tech-hero-container">
+                <!-- Left Column: Content & Interactive Terminal -->
+                <div class="tech-hero-content">
+                    <!-- Creative Tech Pill Badge -->
+                    <div class="tech-badge-pill">
+                        <span class="tech-status-dot"></span>
+                        <span class="tech-badge-text">AVAILABLE FOR ROLES &bull; CREATIVE TECH &amp; SOFTWARE</span>
+                        <span class="tech-badge-chip">SYS.v2.6</span>
+                    </div>
+
+                    <!-- Welcome Title -->
+                    <h1 id="hero-title" class="tech-hero-title">
+                        Hi, I'm <span class="tech-gradient-text">Sneha B B</span>
+                    </h1>
+
+                    <!-- Brief Tagline -->
+                    <p class="tech-hero-tagline">
+                        Software Engineer &amp; Creative Technologist
+                    </p>
+
+                    <!-- Brief Pitch / Bio -->
+                    <p class="tech-hero-description">
+                        Passionate about engineering elegant software architectures with Java and Python, 
+                        bridging mathematical algorithms with physical computing and embedded IoT solutions.
+                    </p>
+
+                    <!-- Interactive Creative Tech Terminal Card -->
+                    <div class="tech-terminal-card">
+                        <div class="terminal-bar">
+                            <div class="terminal-controls">
+                                <span class="term-dot dot-close"></span>
+                                <span class="term-dot dot-min"></span>
+                                <span class="term-dot dot-expand"></span>
+                            </div>
+                            <span class="terminal-filename">sneha@creative-tech: ~/profile.js</span>
+                            <!-- Night Mode Toggle in Hero (Detects browser theme via CSS Media Queries) -->
+                            <div class="terminal-theme-pill">
+                                <button id="hero-theme-toggle" class="terminal-theme-toggle" type="button" aria-label="Toggle Night Mode" title="Toggle theme (Detects browser default via CSS media queries)">
+                                    <span class="theme-label-dark">🌙 Dark Mode</span>
+                                    <span class="theme-label-light">☀️ Light Mode</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="terminal-screen">
+                            <div class="code-line">
+                                <span class="code-token token-keyword">const</span> <span class="code-token token-var">engineer</span> = {
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-token token-key">name</span>: <span class="code-token token-str">"Sneha B B"</span>,
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-token token-key">coreStack</span>: [<span class="code-token token-str">"Java"</span>, <span class="code-token token-str">"Python"</span>, <span class="code-token token-str">"C/C++"</span>],
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-token token-key">innovations</span>: [<span class="code-token token-str">"IoT Electricity Harvesting"</span>, <span class="code-token token-str">"Arduino Microcontrollers"</span>],
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-token token-key">passionateAbout</span>: <span class="code-token token-str">"Scalable backends, physical prototyping &amp; clean code"</span>
+                            </div>
+                            <div class="code-line">
+                                };
+                            </div>
+                            <div class="code-line term-prompt-line">
+                                <span class="term-prompt">&gt;</span> <span class="term-action">engineer.readyForOpportunities()</span> <span class="term-result">// returns true</span><span class="term-cursor"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech CTA Action Buttons -->
+                    <div class="tech-cta-group">
+                        <a href="#projects" class="btn btn-tech-primary" id="hero-cta-projects">
+                            <span>Explore Projects</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                        <a href="Sneha_BB_Resume.pdf" target="_blank" class="btn btn-tech-secondary" id="hero-cta-resume" download>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-tech-ghost" id="hero-cta-contact">Get In Touch</a>
+                    </div>
+
+                    <!-- Quick Metrics Strip -->
+                    <div class="tech-metrics-row">
+                        <div class="metric-box">
+                            <span class="metric-value">2+</span>
+                            <span class="metric-label">Core Languages</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric-box">
+                            <span class="metric-value">IoT+</span>
+                            <span class="metric-label">Hardware Prototypes</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric-box">
+                            <span class="metric-value">93.4%</span>
+                            <span class="metric-label">Academic Distinction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Creative Tech Visual Showcase Card -->
+                <div class="tech-hero-visual">
+                    <div class="tech-avatar-frame-card">
+                        <div class="avatar-glass-card">
+                            <div class="avatar-card-top">
+                                <span class="card-status-badge">
+                                    <span class="pulse-beacon"></span>
+                                    <span>SYSTEM ACTIVE</span>
+                                </span>
+                                <span class="card-class-tag">ENGINEER</span>
+                            </div>
+                            
+                            <div class="avatar-media-container">
+                                <img src="professional photo.jpeg" alt="Sneha B B - Software Engineer &amp; Creative Technologist" class="tech-avatar-photo" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80'">
+                                <div class="avatar-ambient-glow"></div>
+                            </div>
+
+                            <div class="avatar-card-bottom">
+                                <div class="tech-pills-row">
+                                    <span class="tech-micro-pill">☕ Java</span>
+                                    <span class="tech-micro-pill">🐍 Python</span>
+                                    <span class="tech-micro-pill">⚡ Arduino</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Tech Badges -->
+                        <div class="floating-tech-chip chip-hardware">
+                            <span class="chip-emoji">⚡</span>
+                            <div>
+                                <span class="chip-title">IoT Prototyping</span>
+                                <span class="chip-sub">Piezoelectric Energy</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-tech-chip chip-software">
+                            <span class="chip-emoji">💻</span>
+                            <div>
+                                <span class="chip-title">Java &amp; Python OOP</span>
+                                <span class="chip-sub">Robust Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           2. ABOUT SECTION
+           Profile image, bio, engineering philosophy, career highlights, and personal interests.
+           ====================================================================== -->
+        <section id="about" class="about-section section-padding" aria-labelledby="about-title">
+            <!-- Subtle background accent -->
+            <div class="about-bg-accent" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Overview</span>
+                    <h2 id="about-title" class="section-title">About Me</h2>
+                    <p class="section-subtitle">A glimpse into my engineering journey, problem-solving mindset, and aspirations.</p>
+                </div>
+
+                <!-- Main About Layout: Profile + Bio -->
+                <div class="about-main-layout">
+
+                    <!-- ── Left: Profile Card ── -->
+                    <div class="about-profile-col">
+                        <div class="profile-card">
+                            <!-- Glowing ring behind avatar -->
+                            <div class="profile-ring-glow" aria-hidden="true"></div>
+
+                            <!-- Profile Image -->
+                            <div class="profile-img-wrap">
+                                <img
+                                    src="professional photo.jpeg"
+                                    alt="Sneha B B – Software Engineer"
+                                    class="profile-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80'"
+                                >
+                                <!-- Online indicator -->
+                                <span class="profile-status-dot" aria-label="Available for opportunities"></span>
+                            </div>
+
+                            <!-- Name & Title beneath photo -->
+                            <div class="profile-identity">
+                                <h3 class="profile-name">Sneha B B</h3>
+                                <p class="profile-role">Software Engineer &amp; Creative Technologist</p>
+                            </div>
+
+                            <!-- Quick-Stat Pills -->
+                            <div class="profile-stats-row">
+                                <div class="profile-stat">
+                                    <span class="stat-number">93.44</span>
+                                    <span class="stat-label">CGPA</span>
+                                </div>
+                                <div class="profile-stat-divider"></div>
+                                <div class="profile-stat">
+                                    <span class="stat-number">3+</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="profile-stat-divider"></div>
+                                <div class="profile-stat">
+                                    <span class="stat-number">4+</span>
+                                    <span class="stat-label">Languages</span>
+                                </div>
+                            </div>
+
+                            <!-- Social / Contact Links -->
+                            <div class="profile-links">
+                                <a href="mailto:snehabasavaraj937@gmail.com" class="profile-link-btn" aria-label="Email Sneha">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    Email Me
+                                </a>
+                                <a href="#contact" class="profile-link-btn profile-link-outline" aria-label="View Contact Section">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                    Let's Talk
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /profile col -->
+
+                    <!-- ── Right: Bio + Highlights + Interests ── -->
+                    <div class="about-bio-col">
+
+                        <!-- Intro Bio -->
+                        <div class="bio-block">
+                            <h3 class="bio-heading">Building clean, scalable, and impactful solutions</h3>
+                            <p class="bio-text">
+                                I am a dedicated aspiring <strong>Software Engineer</strong> from Karnataka, India,
+                                with a hands-on foundation in <strong>object-oriented programming</strong>,
+                                <strong>data structures</strong>, and <strong>hardware-software integration</strong>.
+                                My academic journey — marked by a <strong>93.44 CGPA</strong> in school — reflects
+                                my commitment to excellence and deep curiosity in technology.
+                            </p>
+                            <p class="bio-text">
+                                From building sustainable energy prototypes using <strong>Arduino microcontrollers</strong>
+                                and piezoelectric sensors, to crafting efficient algorithms in <strong>Python</strong> and
+                                <strong>Java</strong>, I thrive on turning theoretical concepts into working,
+                                reliable implementations that solve real problems.
+                            </p>
+                        </div>
+
+                        <!-- Career Highlights -->
+                        <div class="bio-highlights">
+                            <h4 class="bio-sub-heading">
+                                <span class="sub-heading-bar" aria-hidden="true"></span>
+                                Career Highlights
+                            </h4>
+                            <ul class="highlight-list">
+                                <li class="highlight-item">
+                                    <span class="highlight-dot" aria-hidden="true"></span>
+                                    <div>
+                                        <strong>Footstep Electricity Generation</strong> — designed &amp; constructed an IoT prototype
+                                        converting mechanical footstep energy into usable electricity via piezoelectric elements and Arduino.
+                                    </div>
+                                </li>
+                                <li class="highlight-item">
+                                    <span class="highlight-dot" aria-hidden="true"></span>
+                                    <div>
+                                        <strong>Academic Excellence</strong> — Graduated SSLC with distinction (93.44 CGPA) from
+                                        Vidyavahini Vidhyanikethana School and actively participated in school science exhibitions.
+                                    </div>
+                                </li>
+                                <li class="highlight-item">
+                                    <span class="highlight-dot" aria-hidden="true"></span>
+                                    <div>
+                                        <strong>Polyglot Programmer</strong> — Proficient in Java, Python, C, and web technologies
+                                        (HTML/CSS/JS), with practical experience in OOP design patterns and data structure implementation.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Personal Interests -->
+                        <div class="bio-interests">
+                            <h4 class="bio-sub-heading">
+                                <span class="sub-heading-bar" aria-hidden="true"></span>
+                                Personal Interests
+                            </h4>
+                            <div class="interests-grid">
+                                <div class="interest-chip">
+                                    <span class="interest-emoji">🔌</span>
+                                    <span>Embedded Systems</span>
+                                </div>
+                                <div class="interest-chip">
+                                    <span class="interest-emoji">🌐</span>
+                                    <span>Web Development</span>
+                                </div>
+                                <div class="interest-chip">
+                                    <span class="interest-emoji">🤖</span>
+                                    <span>AI &amp; ML Exploration</span>
+                                </div>
+                                <div class="interest-chip">
+                                    <span class="interest-emoji">📐</span>
+                                    <span>System Design</span>
+                                </div>
+                                <div class="interest-chip">
+                                    <span class="interest-emoji">☕</span>
+                                    <span>Open-Source</span>
+                                </div>
+                                <div class="interest-chip">
+                                    <span class="interest-emoji">📚</span>
+                                    <span>Continuous Learning</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Info Row -->
+                        <div class="bio-info-row">
+                            <div class="bio-info-item">
+                                <span class="info-icon" aria-hidden="true">📍</span>
+                                <span>Karnataka, India</span>
+                            </div>
+                            <div class="bio-info-item">
+                                <span class="info-icon" aria-hidden="true">💼</span>
+                                <span class="text-accent">Open to Internships &amp; Junior Roles</span>
+                            </div>
+                            <div class="bio-info-item">
+                                <span class="info-icon" aria-hidden="true">🎓</span>
+                                <span>B.E. Computer Science (In Progress)</span>
+                            </div>
+                        </div>
+
+                    </div><!-- /bio col -->
+                </div><!-- /main layout -->
+
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           3. SKILLS SECTION
+           Core competencies: progress bars, icon cards, animated tech-stack strip.
+           Skills: Python | ML | DL | NLP | GenAI | Computer Vision | SQL | PyTorch
+                   TensorFlow | Git | Java | C | HTML/CSS/JS | Arduino
+           ====================================================================== -->
+        <section id="skills" class="skills-section section-padding" aria-labelledby="skills-title">
+            <!-- Background decorative grid overlay -->
+            <div class="skills-bg-grid" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Technical Competencies</span>
+                    <h2 id="skills-title" class="section-title">Skills &amp; Technologies</h2>
+                    <p class="section-subtitle">The tools, languages, and frameworks I use to build, research, and ship.</p>
+                </div>
+
+                <!-- ── Tab Filter Bar ── -->
+                <!-- Clicking a tab filters the visible skill category -->
+                <div class="skills-tab-bar" role="tablist" aria-label="Skill categories">
+                    <button class="skill-tab active" role="tab" aria-selected="true"  data-filter="all"    id="tab-all">All</button>
+                    <button class="skill-tab"        role="tab" aria-selected="false" data-filter="ai"     id="tab-ai">AI / ML</button>
+                    <button class="skill-tab"        role="tab" aria-selected="false" data-filter="lang"   id="tab-lang">Languages</button>
+                    <button class="skill-tab"        role="tab" aria-selected="false" data-filter="tools"  id="tab-tools">Tools &amp; DB</button>
+                    <button class="skill-tab"        role="tab" aria-selected="false" data-filter="web"    id="tab-web">Web &amp; Hardware</button>
+                </div>
+
+                <!-- ── Skills Grid ── -->
+                <div class="skills-master-grid" id="skills-master-grid">
+
+                    <!-- ════════════════════════════════════════════════
+                         CARD 1 — Core Programming Languages (progress bars)
+                         Each progress bar visually encodes proficiency level.
+                         ════════════════════════════════════════════════ -->
+                    <div class="skill-card skill-card-wide" data-category="lang" role="tabpanel">
+                        <div class="skill-card-header">
+                            <!-- Pixel-art pixel icon block -->
+                            <span class="skill-card-icon" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </span>
+                            <h3 class="skill-card-title">Programming Languages</h3>
+                        </div>
+
+                        <ul class="progress-skill-list" aria-label="Language proficiency">
+                            <!-- Python — primary language for AI/ML work -->
+                            <li class="progress-skill-item">
+                                <div class="ps-meta">
+                                    <span class="ps-name">
+                                        <span class="ps-dot" style="background:#3776AB"></span>Python
+                                    </span>
+                                    <span class="ps-pct">88%</span>
+                                </div>
+                                <div class="ps-bar-track" aria-label="Python proficiency 88%">
+                                    <div class="ps-bar-fill" data-width="88" style="--bar-color:#3776AB"></div>
+                                </div>
+                                <span class="ps-tag">Scripting · AI · Automation</span>
+                            </li>
+
+                            <!-- Java — OOP & backend engineering -->
+                            <li class="progress-skill-item">
+                                <div class="ps-meta">
+                                    <span class="ps-name">
+                                        <span class="ps-dot" style="background:#f89820"></span>Java
+                                    </span>
+                                    <span class="ps-pct">82%</span>
+                                </div>
+                                <div class="ps-bar-track" aria-label="Java proficiency 82%">
+                                    <div class="ps-bar-fill" data-width="82" style="--bar-color:#f89820"></div>
+                                </div>
+                                <span class="ps-tag">OOP · DSA · Backend</span>
+                            </li>
+
+                            <!-- SQL — database querying and manipulation -->
+                            <li class="progress-skill-item">
+                                <div class="ps-meta">
+                                    <span class="ps-name">
+                                        <span class="ps-dot" style="background:#336791"></span>SQL
+                                    </span>
+                                    <span class="ps-pct">75%</span>
+                                </div>
+                                <div class="ps-bar-track" aria-label="SQL proficiency 75%">
+                                    <div class="ps-bar-fill" data-width="75" style="--bar-color:#336791"></div>
+                                </div>
+                                <span class="ps-tag">Queries · Joins · Schema</span>
+                            </li>
+
+                            <!-- C — low-level and systems programming -->
+                            <li class="progress-skill-item">
+                                <div class="ps-meta">
+                                    <span class="ps-name">
+                                        <span class="ps-dot" style="background:#5C6BC0"></span>C / C++
+                                    </span>
+                                    <span class="ps-pct">70%</span>
+                                </div>
+                                <div class="ps-bar-track" aria-label="C proficiency 70%">
+                                    <div class="ps-bar-fill" data-width="70" style="--bar-color:#5C6BC0"></div>
+                                </div>
+                                <span class="ps-tag">Systems · Embedded</span>
+                            </li>
+                        </ul>
+                    </div><!-- /card 1 -->
+
+                    <!-- ════════════════════════════════════════════════
+                         CARD 2 — AI / ML Domains (icon badge grid)
+                         Each badge represents a distinct AI/ML sub-field.
+                         ════════════════════════════════════════════════ -->
+                    <div class="skill-card" data-category="ai" role="tabpanel">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+                            </span>
+                            <h3 class="skill-card-title">AI &amp; Machine Learning</h3>
+                        </div>
+
+                        <!-- Icon badge grid — each badge = one AI/ML domain -->
+                        <div class="ai-domain-grid">
+                            <!-- Machine Learning: classical algorithms & model training -->
+                            <div class="ai-domain-badge" title="Classical ML algorithms and model evaluation">
+                                <span class="ai-badge-icon">🧠</span>
+                                <span class="ai-badge-name">Machine Learning</span>
+                                <span class="ai-badge-sub">Classification · Regression</span>
+                            </div>
+                            <!-- Deep Learning: neural network architectures -->
+                            <div class="ai-domain-badge" title="Neural networks and deep architectures">
+                                <span class="ai-badge-icon">🔬</span>
+                                <span class="ai-badge-name">Deep Learning</span>
+                                <span class="ai-badge-sub">CNNs · RNNs · Transformers</span>
+                            </div>
+                            <!-- NLP: text understanding and generation -->
+                            <div class="ai-domain-badge" title="Text processing and language models">
+                                <span class="ai-badge-icon">💬</span>
+                                <span class="ai-badge-name">NLP</span>
+                                <span class="ai-badge-sub">Tokenization · Embeddings</span>
+                            </div>
+                            <!-- Generative AI: LLMs and prompt engineering -->
+                            <div class="ai-domain-badge ai-badge-highlight" title="Large Language Models and prompt engineering">
+                                <span class="ai-badge-icon">✨</span>
+                                <span class="ai-badge-name">Generative AI</span>
+                                <span class="ai-badge-sub">LLMs · Prompt Engineering</span>
+                            </div>
+                            <!-- Computer Vision: image analysis and object detection -->
+                            <div class="ai-domain-badge" title="Image processing and visual recognition">
+                                <span class="ai-badge-icon">👁️</span>
+                                <span class="ai-badge-name">Computer Vision</span>
+                                <span class="ai-badge-sub">Detection · Segmentation</span>
+                            </div>
+                        </div>
+                    </div><!-- /card 2 -->
+
+                    <!-- ════════════════════════════════════════════════
+                         CARD 3 — Frameworks & Libraries (logo pills)
+                         Each pill represents an ML framework or library.
+                         ════════════════════════════════════════════════ -->
+                    <div class="skill-card" data-category="ai" role="tabpanel">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </span>
+                            <h3 class="skill-card-title">Frameworks &amp; Libraries</h3>
+                        </div>
+
+                        <ul class="framework-pill-list">
+                            <!-- PyTorch — primary DL framework -->
+                            <li class="framework-pill" style="--fw-color:#EE4C2C">
+                                <span class="fw-indicator"></span>
+                                <div class="fw-info">
+                                    <span class="fw-name">PyTorch</span>
+                                    <span class="fw-desc">Dynamic computation graphs, custom model training</span>
+                                </div>
+                                <span class="fw-badge">DL Framework</span>
+                            </li>
+                            <!-- TensorFlow — production ML deployment -->
+                            <li class="framework-pill" style="--fw-color:#FF6F00">
+                                <span class="fw-indicator"></span>
+                                <div class="fw-info">
+                                    <span class="fw-name">TensorFlow / Keras</span>
+                                    <span class="fw-desc">High-level API for rapid model prototyping</span>
+                                </div>
+                                <span class="fw-badge">ML Platform</span>
+                            </li>
+                            <!-- scikit-learn — classical ML toolkit -->
+                            <li class="framework-pill" style="--fw-color:#F7931E">
+                                <span class="fw-indicator"></span>
+                                <div class="fw-info">
+                                    <span class="fw-name">scikit-learn</span>
+                                    <span class="fw-desc">Classical ML algorithms, preprocessing, evaluation</span>
+                                </div>
+                                <span class="fw-badge">ML Library</span>
+                            </li>
+                            <!-- Pandas / NumPy — data wrangling -->
+                            <li class="framework-pill" style="--fw-color:#150458">
+                                <span class="fw-indicator" style="background:#150458"></span>
+                                <div class="fw-info">
+                                    <span class="fw-name">Pandas &amp; NumPy</span>
+                                    <span class="fw-desc">Data manipulation, numerical computing, EDA</span>
+                                </div>
+                                <span class="fw-badge">Data Science</span>
+                            </li>
+                            <!-- Hugging Face — NLP & GenAI models -->
+                            <li class="framework-pill" style="--fw-color:#FFD21E">
+                                <span class="fw-indicator" style="background:#b8960c"></span>
+                                <div class="fw-info">
+                                    <span class="fw-name">Hugging Face Transformers</span>
+                                    <span class="fw-desc">Pre-trained NLP models, tokenizers, pipelines</span>
+                                </div>
+                                <span class="fw-badge">NLP / GenAI</span>
+                            </li>
+                        </ul>
+                    </div><!-- /card 3 -->
+
+                    <!-- ════════════════════════════════════════════════
+                         CARD 4 — Tools & DevOps (icon list)
+                         Version control, databases, and development tools.
+                         ════════════════════════════════════════════════ -->
+                    <div class="skill-card" data-category="tools" role="tabpanel">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                            </span>
+                            <h3 class="skill-card-title">Tools &amp; Databases</h3>
+                        </div>
+
+                        <div class="tools-icon-grid">
+                            <!-- Git — source control and collaboration -->
+                            <div class="tool-icon-item">
+                                <div class="tool-icon-circle" style="--t-color:#F05032">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.546 10.93L13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 1 1-1.1 1.034l-2.48-2.48v6.511a1.84 1.84 0 1 1-1.512-.016v-6.57a1.835 1.835 0 0 1-.997-2.415L7.614 4.196 .45 11.36a1.55 1.55 0 0 0 0 2.189l10.48 10.477a1.55 1.55 0 0 0 2.187 0l10.428-10.43a1.55 1.55 0 0 0 0-2.187"/></svg>
+                                </div>
+                                <span class="tool-name">Git &amp; GitHub</span>
+                                <span class="tool-sub">Version Control</span>
+                            </div>
+                            <!-- SQL databases -->
+                            <div class="tool-icon-item">
+                                <div class="tool-icon-circle" style="--t-color:#336791">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                                </div>
+                                <span class="tool-name">PostgreSQL / MySQL</span>
+                                <span class="tool-sub">Relational DBs</span>
+                            </div>
+                            <!-- Jupyter Notebook for ML experimentation -->
+                            <div class="tool-icon-item">
+                                <div class="tool-icon-circle" style="--t-color:#F37626">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <span class="tool-name">Jupyter Notebook</span>
+                                <span class="tool-sub">Experimentation</span>
+                            </div>
+                            <!-- VS Code — primary IDE -->
+                            <div class="tool-icon-item">
+                                <div class="tool-icon-circle" style="--t-color:#007ACC">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                </div>
+                                <span class="tool-name">VS Code</span>
+                                <span class="tool-sub">Primary IDE</span>
+                            </div>
+                            <!-- OpenCV — computer vision processing -->
+                            <div class="tool-icon-item">
+                                <div class="tool-icon-circle" style="--t-color:#5C3EE8">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                                </div>
+                                <span class="tool-name">OpenCV</span>
+                                <span class="tool-sub">Computer Vision</span>
+                            </div>
+                            <!-- Google Colab — cloud training -->
+                            <div class="tool-icon-item">
+                                <div class="tool-icon-circle" style="--t-color:#F9AB00">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+                                </div>
+                                <span class="tool-name">Google Colab</span>
+                                <span class="tool-sub">Cloud Training</span>
+                            </div>
+                        </div>
+                    </div><!-- /card 4 -->
+
+                    <!-- ════════════════════════════════════════════════
+                         CARD 5 — Web & Hardware (styled pill list)
+                         Web technologies and embedded system skills.
+                         ════════════════════════════════════════════════ -->
+                    <div class="skill-card" data-category="web" role="tabpanel">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </span>
+                            <h3 class="skill-card-title">Web &amp; Hardware</h3>
+                        </div>
+
+                        <!-- Dual sub-list: web tech + embedded -->
+                        <div class="web-hw-container">
+                            <div class="web-hw-group">
+                                <span class="web-hw-label">🌐 Web Technologies</span>
+                                <ul class="tagged-skill-list">
+                                    <li class="tagged-skill" style="--ts-color:#E34C26">HTML5</li>
+                                    <li class="tagged-skill" style="--ts-color:#264DE4">CSS3</li>
+                                    <li class="tagged-skill" style="--ts-color:#F7DF1E;color:#333">JavaScript</li>
+                                    <li class="tagged-skill" style="--ts-color:#6366f1">Responsive Design</li>
+                                </ul>
+                            </div>
+                            <div class="web-hw-group">
+                                <span class="web-hw-label">⚡ Embedded &amp; Hardware</span>
+                                <ul class="tagged-skill-list">
+                                    <li class="tagged-skill" style="--ts-color:#00979C">Arduino</li>
+                                    <li class="tagged-skill" style="--ts-color:#06b6d4">Piezoelectric Sensors</li>
+                                    <li class="tagged-skill" style="--ts-color:#a855f7">Circuit Design</li>
+                                    <li class="tagged-skill" style="--ts-color:#22c55e">Power Electronics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /card 5 -->
+
+                </div><!-- /skills-master-grid -->
+
+                <!-- ── Scrolling Tech Stack Strip ──
+                     Auto-scrolling marquee that loops through all key tech keywords.
+                     Purely decorative; reinforces the breadth of the tech stack. -->
+                <div class="tech-strip-wrap" aria-hidden="true">
+                    <div class="tech-strip-track">
+                        <span>Python</span><span class="ts-dot">◆</span>
+                        <span>PyTorch</span><span class="ts-dot">◆</span>
+                        <span>TensorFlow</span><span class="ts-dot">◆</span>
+                        <span>Machine Learning</span><span class="ts-dot">◆</span>
+                        <span>Deep Learning</span><span class="ts-dot">◆</span>
+                        <span>NLP</span><span class="ts-dot">◆</span>
+                        <span>Generative AI</span><span class="ts-dot">◆</span>
+                        <span>Computer Vision</span><span class="ts-dot">◆</span>
+                        <span>SQL</span><span class="ts-dot">◆</span>
+                        <span>Git</span><span class="ts-dot">◆</span>
+                        <span>Java</span><span class="ts-dot">◆</span>
+                        <span>scikit-learn</span><span class="ts-dot">◆</span>
+                        <span>Pandas</span><span class="ts-dot">◆</span>
+                        <span>OpenCV</span><span class="ts-dot">◆</span>
+                        <span>Arduino</span><span class="ts-dot">◆</span>
+                        <!-- Duplicate for seamless infinite loop -->
+                        <span>Python</span><span class="ts-dot">◆</span>
+                        <span>PyTorch</span><span class="ts-dot">◆</span>
+                        <span>TensorFlow</span><span class="ts-dot">◆</span>
+                        <span>Machine Learning</span><span class="ts-dot">◆</span>
+                        <span>Deep Learning</span><span class="ts-dot">◆</span>
+                        <span>NLP</span><span class="ts-dot">◆</span>
+                        <span>Generative AI</span><span class="ts-dot">◆</span>
+                        <span>Computer Vision</span><span class="ts-dot">◆</span>
+                        <span>SQL</span><span class="ts-dot">◆</span>
+                        <span>Git</span><span class="ts-dot">◆</span>
+                        <span>Java</span><span class="ts-dot">◆</span>
+                        <span>scikit-learn</span><span class="ts-dot">◆</span>
+                        <span>Pandas</span><span class="ts-dot">◆</span>
+                        <span>OpenCV</span><span class="ts-dot">◆</span>
+                        <span>Arduino</span><span class="ts-dot">◆</span>
+                    </div>
+                </div><!-- /tech strip -->
+
+            </div>
+        </section>
+
+
+        <!-- ======================================================================
+           PLACEHOLDER: 4. TIMELINE / EXPERIENCE SECTION
+           Chronological education milestones, academic roles, and achievements.
+           ====================================================================== -->
+        <section id="timeline" class="timeline-section section-padding" aria-labelledby="timeline-title">
+            <!-- Subtle decorative background -->
+            <div class="timeline-bg-glow" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Education Journey</span>
+                    <h2 id="timeline-title" class="section-title">Academic Timeline</h2>
+                    <p class="section-subtitle">A chronological walk through my education — from school to engineering college.</p>
+                </div>
+
+                <div class="timeline-track" aria-label="Education timeline">
+                    <!-- The vertical line is drawn via CSS ::before on .timeline-track -->
+
+                    <!-- ── Timeline Item 1: B.E. in AI & ML (Current) ── -->
+                    <div class="tl-item tl-item--active" id="tl-btech">
+                        <div class="tl-marker">
+                            <span class="tl-marker-dot">
+                                <span class="tl-pulse" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                        <div class="tl-card">
+                            <div class="tl-card-accent" aria-hidden="true"></div>
+                            <div class="tl-card-header">
+                                <span class="tl-icon" aria-hidden="true">🎓</span>
+                                <div class="tl-date-badge tl-date-badge--current">
+                                    <span class="tl-current-dot" aria-hidden="true"></span>
+                                    2025 — 2029
+                                </div>
+                            </div>
+                            <h3 class="tl-degree">Bachelor of Engineering — AI &amp; Machine Learning</h3>
+                            <h4 class="tl-institution">Adichunchanagiri Institute of Technology (AIT)</h4>
+                            <p class="tl-description">
+                                Currently pursuing 2nd year B.E. in Artificial Intelligence &amp; Machine Learning. 
+                                Building strong foundations in data structures, algorithms, neural networks, and 
+                                intelligent systems — set to graduate in 2029.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">AI/ML</span>
+                                <span class="tl-tag">DSA</span>
+                                <span class="tl-tag">Python</span>
+                                <span class="tl-tag">Deep Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ── Timeline Item 2: Pre-University (PUC) ── -->
+                    <div class="tl-item" id="tl-puc">
+                        <div class="tl-marker">
+                            <span class="tl-marker-dot"></span>
+                        </div>
+                        <div class="tl-card">
+                            <div class="tl-card-accent" aria-hidden="true"></div>
+                            <div class="tl-card-header">
+                                <span class="tl-icon" aria-hidden="true">📘</span>
+                                <div class="tl-date-badge">2023 — 2025</div>
+                            </div>
+                            <h3 class="tl-degree">Pre-University Course (Science)</h3>
+                            <h4 class="tl-institution">Vijaya Integrated PU College, Tumkur</h4>
+                            <p class="tl-description">
+                                Completed pre-university education with a focus on Mathematics, Physics, Chemistry, 
+                                and foundational computer science. Strengthened analytical thinking and scientific 
+                                reasoning abilities.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">Science Stream</span>
+                                <span class="tl-tag">Mathematics</span>
+                                <span class="tl-tag">Physics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ── Timeline Item 3: SSLC (Secondary School) ── -->
+                    <div class="tl-item" id="tl-sslc">
+                        <div class="tl-marker">
+                            <span class="tl-marker-dot"></span>
+                        </div>
+                        <div class="tl-card">
+                            <div class="tl-card-accent" aria-hidden="true"></div>
+                            <div class="tl-card-header">
+                                <span class="tl-icon" aria-hidden="true">🏫</span>
+                                <div class="tl-date-badge">2022 — 2023</div>
+                            </div>
+                            <h3 class="tl-degree">SSLC (Secondary School Leaving Certificate)</h3>
+                            <h4 class="tl-institution">Vidhyavahini Vidhyanikethana School, Bagur</h4>
+                            <p class="tl-description">
+                                Graduated secondary school with distinction (CGPA: 93.44), demonstrating consistent 
+                                academic excellence and discipline. Actively participated in school science exhibitions 
+                                and co-curricular activities.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">CGPA 93.44</span>
+                                <span class="tl-tag">Distinction</span>
+                                <span class="tl-tag">Science Exhibitions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /timeline-track -->
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           PLACEHOLDER: 5. PROJECTS SECTION
+           Featured software engineering projects, hardware innovations, and code samples.
+           ====================================================================== -->
+        <section id="projects" class="projects-section section-padding" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Featured Work</span>
+                    <h2 id="projects-title" class="section-title">Engineering Projects</h2>
+                    <p class="section-subtitle">Real-world applications and engineering systems built with passion.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1: Footstep Electricity Generation -->
+                    <article class="project-card" id="project-footstep-electricity">
+                        <div class="project-banner">
+                            <span class="project-category">Hardware &amp; IoT</span>
+                            <div class="project-icon-placeholder">⚡</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Footstep Electricity Generation System</h3>
+                            <p class="project-description">
+                                An innovative renewable energy harvesting prototype that converts mechanical footstep 
+                                pressure into electrical energy using piezoelectric sensor arrays and an Arduino microcontroller.
+                            </p>
+                            
+                            <ul class="project-features">
+                                <li>Piezoelectric sensor matrix interfacing &amp; energy conversion</li>
+                                <li>Arduino circuit design, firmware programming &amp; telemetry</li>
+                                <li>System testing, load validation, and battery storage integration</li>
+                            </ul>
+
+                            <div class="project-tags">
+                                <span class="tag">Arduino</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">Sensors</span>
+                                <span class="tag">Circuit Design</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/snehabb14" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="View Project Source Code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    View Repository
+                                </a>
+                                <span class="project-status">Demonstrated Prototype</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2: Student Management System (Placeholder) -->
+                    <article class="project-card" id="project-java-mgmt">
+                        <div class="project-banner">
+                            <span class="project-category">Core Software</span>
+                            <div class="project-icon-placeholder">☕</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Student Record &amp; Grading System</h3>
+                            <p class="project-description">
+                                A desktop application demonstrating object-oriented architecture in Java, featuring 
+                                CRUD operations, input sanitization, file persistence, and search algorithms.
+                            </p>
+                            
+                            <ul class="project-features">
+                                <li>Clean OOP structure applying encapsulation &amp; inheritance</li>
+                                <li>File I/O data persistence and error handling</li>
+                                <li>Fast searching &amp; sorting of academic records</li>
+                            </ul>
+
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">OOP</span>
+                                <span class="tag">File I/O</span>
+                                <span class="tag">Data Structures</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/snehabb14" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="View Project Source Code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    View Repository
+                                </a>
+                                <span class="project-status">Completed</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3: Python Automation & Data Tool (Placeholder) -->
+                    <article class="project-card" id="project-python-automation">
+                        <div class="project-banner">
+                            <span class="project-category">Automation</span>
+                            <div class="project-icon-placeholder">🐍</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Python Data Parser &amp; Automator</h3>
+                            <p class="project-description">
+                                A suite of Python scripts designed to automate repetitive filesystem tasks, clean CSV datasets, 
+                                and generate visual performance summaries.
+                            </p>
+                            
+                            <ul class="project-features">
+                                <li>Automated report extraction and file batch processing</li>
+                                <li>Data manipulation and parsing routines</li>
+                                <li>CLI-driven workflow with helpful logging</li>
+                            </ul>
+
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Automation</span>
+                                <span class="tag">CLI</span>
+                                <span class="tag">Scripts</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/snehabb14" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="View Project Source Code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    View Repository
+                                </a>
+                                <span class="project-status">In Development</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           PLACEHOLDER: INTERACTIVE AI CHAT SECTION
+           Allows visitors to interact with a conversational AI twin of Sneha B B.
+           Equipped with quick prompt suggestions, simulated typing indicator,
+           and prepared integration points for OpenAI / backend API.
+           ====================================================================== -->
+        <section id="chat" class="chat-section section-padding" aria-labelledby="chat-title">
+            <!-- Ambient ambient glow -->
+            <div class="chat-ambient-glow" aria-hidden="true"></div>
+
+            <div class="container chat-container">
+                <div class="section-header">
+                    <span class="section-tag">Interactive AI Assistant</span>
+                    <h2 id="chat-title" class="section-title">Chat with Sneha AI</h2>
+                    <p class="section-subtitle">Ask questions about my education, IoT projects, ML expertise, or availability for internships.</p>
+                </div>
+
+                <!-- Chat Window Card -->
+                <div class="chat-window" id="chat-window">
+                    <!-- Chat Header Bar -->
+                    <div class="chat-window-header">
+                        <div class="chat-agent-info">
+                            <div class="chat-avatar-wrap">
+                                <img src="professional photo.jpeg" alt="Sneha AI Avatar" class="chat-avatar-img" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80'">
+                                <span class="chat-online-badge" title="AI Assistant Online"></span>
+                            </div>
+                            <div class="chat-agent-meta">
+                                <div class="chat-agent-title">
+                                    <span class="chat-agent-name">Sneha AI</span>
+                                    <span class="chat-agent-pill">Virtual Twin v2.6</span>
+                                </div>
+                                <span class="chat-agent-status">Online &bull; Powered by Portfolio Knowledge Base</span>
+                            </div>
+                        </div>
+
+                        <div class="chat-header-actions">
+                            <button id="chat-clear-btn" class="chat-btn-ghost" type="button" title="Clear chat history" aria-label="Clear chat messages">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 6h18"></path>
+                                    <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                </svg>
+                                <span>Reset</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Quick Suggestions Bar -->
+                    <div class="chat-suggestions-wrap">
+                        <span class="suggestions-label">Quick Prompts:</span>
+                        <div class="chat-suggestions" id="chat-suggestions" role="toolbar" aria-label="Suggested questions">
+                            <button type="button" class="suggestion-chip" data-prompt="What is your educational background?">
+                                🎓 Education &amp; College
+                            </button>
+                            <button type="button" class="suggestion-chip" data-prompt="Tell me about the Footstep Electricity Generation project.">
+                                ⚡ Footstep Electricity Project
+                            </button>
+                            <button type="button" class="suggestion-chip" data-prompt="What programming languages and frameworks do you use?">
+                                💻 Skills &amp; Stack
+                            </button>
+                            <button type="button" class="suggestion-chip" data-prompt="Are you available for internship opportunities?">
+                                💼 Internship Roles
+                            </button>
+                            <button type="button" class="suggestion-chip" data-prompt="How can I get in touch with you?">
+                                📬 Contact Info
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Chat Messages Display Area -->
+                    <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-label="Chat messages history">
+                        <!-- Initial AI Welcome Bubble -->
+                        <div class="chat-msg chat-msg-bot">
+                            <div class="msg-avatar" aria-hidden="true">
+                                <span>🤖</span>
+                            </div>
+                            <div class="msg-body">
+                                <div class="msg-author-meta">
+                                    <span class="msg-author-name">Sneha AI</span>
+                                    <span class="msg-time">Just now</span>
+                                </div>
+                                <div class="msg-bubble">
+                                    <p>Hello! 👋 I'm Sneha's interactive AI assistant. Ask me anything about her studies in AIML at Adichunchanagiri Institute of Technology, her IoT Footstep Electricity project, or technical skills in Java, Python, and Machine Learning!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Typing Indicator (hidden by default) -->
+                    <div class="typing-indicator-row" id="typing-indicator" aria-hidden="true" style="display: none;">
+                        <div class="msg-avatar">
+                            <span>🤖</span>
+                        </div>
+                        <div class="typing-bubble">
+                            <span class="typing-dot"></span>
+                            <span class="typing-dot"></span>
+                            <span class="typing-dot"></span>
+                        </div>
+                    </div>
+
+                    <!-- Chat Input Form -->
+                    <form class="chat-input-bar" id="chat-form" action="#" autocomplete="off">
+                        <label for="chat-input" class="sr-only">Type a message for Sneha AI</label>
+                        <div class="chat-input-wrapper">
+                            <input 
+                                type="text" 
+                                id="chat-input" 
+                                class="chat-input-field" 
+                                placeholder="Ask Sneha AI anything (e.g. 'What is your degree?' or 'How to contact?')..."
+                                maxlength="400"
+                                required
+                            >
+                            <button type="submit" id="chat-send-btn" class="chat-send-btn" aria-label="Send message">
+                                <span>Send</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="chat-disclaimer">
+                            <span>💡 Interactive simulation based on Sneha's profile. Ready for OpenAI API integration.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+           PLACEHOLDER: 6. CONTACT SECTION
+           Direct contact cards, phone number (+91 8618728687), email (snehabasavaraj937@gmail.com),
+           and high-contrast contact form with Resend API integration hook & success confirmation.
+           ====================================================================== -->
+        <section id="contact" class="contact-section section-padding" aria-labelledby="contact-title">
+            <!-- Subtle ambient glow -->
+            <div class="contact-bg-glow" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Interested in collaborating or discussing an opportunity? Feel free to reach out directly or send a message below!</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Cards & Channels -->
+                    <div class="contact-info">
+                        <div class="contact-info-intro">
+                            <h3 class="contact-info-heading">Direct Channels</h3>
+                            <p class="contact-info-desc">Feel free to reach out through any of these platforms or fill out the form. I typically respond within 24 hours.</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">📧</div>
+                            <div class="contact-card-text">
+                                <h4 class="contact-card-title">Email Address</h4>
+                                <a href="mailto:snehabasavaraj937@gmail.com" class="contact-card-link" aria-label="Send email to snehabasavaraj937@gmail.com">
+                                    snehabasavaraj937@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">📱</div>
+                            <div class="contact-card-text">
+                                <h4 class="contact-card-title">Contact Number</h4>
+                                <a href="tel:+918618728687" class="contact-card-link" aria-label="Call Sneha B B at 8618728687">
+                                    +91 8618728687
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">💼</div>
+                            <div class="contact-card-text">
+                                <h4 class="contact-card-title">LinkedIn</h4>
+                                <a href="https://linkedin.com/in/sneha-b-b-74249a441" target="_blank" rel="noopener noreferrer" class="contact-card-link" aria-label="Visit Sneha's LinkedIn profile">
+                                    linkedin.com/in/sneha-b-b-74249a441
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">🐙</div>
+                            <div class="contact-card-text">
+                                <h4 class="contact-card-title">GitHub</h4>
+                                <a href="https://github.com/snehabb14" target="_blank" rel="noopener noreferrer" class="contact-card-link" aria-label="Visit Sneha's GitHub profile">
+                                    github.com/snehabb14
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">📍</div>
+                            <div class="contact-card-text">
+                                <h4 class="contact-card-title">Location</h4>
+                                <span class="contact-card-link" style="color:var(--text-secondary);">Karnataka, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-container">
+                        <!-- Success Confirmation Card (displayed upon successful submission) -->
+                        <div id="contact-success-msg" class="contact-success-card" role="status" aria-live="polite" style="display: none;">
+                            <div class="success-icon-wrap" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="success-title">Message Sent Successfully! 🎉</h3>
+                            <p class="success-desc">
+                                Thank you, <strong id="success-name-display">there</strong>! Your message has been received. Sneha will get back to you shortly at <strong id="success-email-display">your email</strong>.
+                            </p>
+                            <button type="button" id="contact-reset-btn" class="contact-reset-btn">
+                                <span>Send Another Message</span>
+                            </button>
+                        </div>
+
+                        <!-- Main Contact Form -->
+                        <form id="contact-form" class="contact-form" novalidate autocomplete="on">
+                            <div class="form-header">
+                                <h3 class="form-heading">Send a Message</h3>
+                                <p class="form-subtext">Fill in the form fields below and I'll get back to you as soon as possible.</p>
+                            </div>
+
+                            <!-- Name Field -->
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">
+                                    Full Name <span class="required-star">*</span>
+                                </label>
+                                <div class="form-input-wrapper">
+                                    <span class="input-icon" aria-hidden="true">👤</span>
+                                    <input 
+                                        type="text" 
+                                        id="contact-name" 
+                                        name="name" 
+                                        class="form-input" 
+                                        placeholder="e.g. Alex Morgan / Basavaraj" 
+                                        required 
+                                        autocomplete="name"
+                                    >
+                                </div>
+                                <span class="form-error-msg" id="name-error" aria-live="polite"></span>
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">
+                                    Email Address <span class="required-star">*</span>
+                                </label>
+                                <div class="form-input-wrapper">
+                                    <span class="input-icon" aria-hidden="true">✉️</span>
+                                    <input 
+                                        type="email" 
+                                        id="contact-email" 
+                                        name="email" 
+                                        class="form-input" 
+                                        placeholder="e.g. yourname@domain.com" 
+                                        required 
+                                        autocomplete="email"
+                                    >
+                                </div>
+                                <span class="form-error-msg" id="email-error" aria-live="polite"></span>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">
+                                    Message <span class="required-star">*</span>
+                                </label>
+                                <div class="form-input-wrapper textarea-wrapper">
+                                    <textarea 
+                                        id="contact-message" 
+                                        name="message" 
+                                        rows="5" 
+                                        class="form-textarea" 
+                                        placeholder="Hi Sneha, I'm reaching out regarding an internship opportunity / project..." 
+                                        required
+                                        minlength="10"
+                                    ></textarea>
+                                </div>
+                                <span class="form-error-msg" id="message-error" aria-live="polite"></span>
+                            </div>
+
+                            <!-- High-Contrast Clearly Visible Submit Button -->
+                            <button type="submit" class="contact-submit-btn" id="contact-submit-btn" aria-label="Send message to Sneha B B">
+                                <span class="submit-btn-text">Send Message</span>
+                                <svg class="submit-btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                                <span class="submit-btn-spinner" aria-hidden="true" style="display: none;"></span>
+                            </button>
+
+                            <p class="form-footnote">
+                                🔒 Your email is strictly confidential. Ready for Resend API email integration.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================================
+       FOOTER SECTION
+       Contains copyright information, quick navigation links, and back-to-top button.
+       ========================================================================== -->
+    <!-- ==========================================================================
+       FOOTER SECTION — Creative Tech Footer with Evenly Spaced Social Icons
+       Contains branding, bio snippet, quick navigation, evenly spaced social
+       media channels with rich hover glow, and accessibility labels.
+       ========================================================================== -->
+    <footer id="site-footer" class="site-footer" role="contentinfo">
+        <!-- Subtle Ambient Background Mesh -->
+        <div class="footer-ambient-mesh" aria-hidden="true"></div>
+
+        <div class="container footer-container">
+            <!-- Column 1: Brand & Bio -->
+            <div class="footer-brand">
+                <a href="#hero" class="nav-logo footer-logo" aria-label="Sneha B B Portfolio - Return to top">
+                    <span class="logo-code">&lt;</span>Sneha<span class="logo-accent">.dev</span><span class="logo-code">/&gt;</span>
+                </a>
+                <p class="footer-tagline">
+                    Software Engineer &amp; AIML Technologist. Crafting robust software architectures in Java &amp; Python, intelligent neural systems, and sustainable IoT energy solutions.
+                </p>
+                <div class="footer-badge-row">
+                    <span class="footer-chip">
+                        <span class="footer-chip-beacon" aria-hidden="true"></span>
+                        B.E. AIML &bull; AIT (2025&ndash;2029)
+                    </span>
+                    <span class="footer-chip footer-chip-status">SYS: ACTIVE</span>
+                </div>
+            </div>
+
+            <!-- Column 2: Navigation Links -->
+            <div class="footer-nav">
+                <h4 class="footer-col-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills &amp; Tech</a></li>
+                    <li><a href="#timeline">Education Timeline</a></li>
+                    <li><a href="#projects">Engineering Projects</a></li>
+                    <li><a href="#chat">AI Assistant Chat</a></li>
+                    <li><a href="#contact">Get In Touch</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Evenly Spaced Social Media Channels -->
+            <div class="footer-social-col">
+                <h4 class="footer-col-title">Connect &amp; Socials</h4>
+                <p class="footer-social-desc">
+                    Connect across platforms to discuss collaborations, view code repositories, or explore career opportunities.
+                </p>
+
+                <!-- Evenly Spaced Creative Tech Social Media Icons -->
+                <div class="social-icon-row" role="list" aria-label="Social media profile links">
+                    <!-- LinkedIn -->
+                    <div class="social-item" role="listitem">
+                        <a 
+                            href="https://www.linkedin.com/in/sneha-b-b-74249a441?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="social-icon-btn btn-social-linkedin" 
+                            aria-label="Visit Sneha B B's LinkedIn profile (opens in a new tab)" 
+                            title="LinkedIn: Sneha B B"
+                        >
+                            <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <span class="social-tooltip" aria-hidden="true">LinkedIn</span>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="social-item" role="listitem">
+                        <a 
+                            href="https://github.com/snehabb14" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="social-icon-btn btn-social-github" 
+                            aria-label="Visit Sneha B B's GitHub profile and repositories (opens in a new tab)" 
+                            title="GitHub: snehabb14"
+                        >
+                            <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <span class="social-tooltip" aria-hidden="true">GitHub</span>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="social-item" role="listitem">
+                        <a 
+                            href="mailto:snehabasavaraj937@gmail.com" 
+                            class="social-icon-btn btn-social-email" 
+                            aria-label="Send an email to snehabasavaraj937@gmail.com" 
+                            title="Email: snehabasavaraj937@gmail.com"
+                        >
+                            <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                        <span class="social-tooltip" aria-hidden="true">Email</span>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="social-item" role="listitem">
+                        <a 
+                            href="tel:+918618728687" 
+                            class="social-icon-btn btn-social-phone" 
+                            aria-label="Call Sneha B B at +91 8618728687" 
+                            title="Phone: +91 8618728687"
+                        >
+                            <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </a>
+                        <span class="social-tooltip" aria-hidden="true">Call</span>
+                    </div>
+                </div>
+
+                <div class="footer-direct-contact">
+                    <span class="footer-contact-line">📧 snehabasavaraj937@gmail.com</span>
+                    <span class="footer-contact-line">📱 +91 8618728687</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p class="footer-copyright">
+                    &copy; 2026 Sneha B B. Built with semantic HTML, modern CSS &amp; vanilla JS.
+                </p>
+                <a href="#hero" class="back-to-top" aria-label="Scroll back to top of the page">
+                    <span>Back to Top</span>
+                    <svg class="back-to-top-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                        <polyline points="5 12 12 5 19 12"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Theme Toggling, Smooth Scrolling & Navigation -->
+    <script src="script.js"></script>
+</body>
+</html>
